@@ -1,3 +1,5 @@
 # Filmorama  [![Jekyll site CI](https://github.com/gustavoevf/filmorama/actions/workflows/jekyll.yml/badge.svg?branch=main)](https://github.com/gustavoevf/filmorama/actions/workflows/jekyll.yml)
 
-Portal de filmes fictício
+Portal de filmes fictício. Disponível em:
+https://gustavoevf.github.io/filmorama/
+

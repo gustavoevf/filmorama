@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Filmorama</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/filmorama.ico">
+</head>
+
+<body>
+    <div class="home">
+        <div class="row header ps-3 pe-3">
+            <div class="col-3">
+                <img class="logo-header" src="assets/filmorama.png" alt="Filmorama_LOGO">
+            </div>
+            <div class="col-3 col-sm-2 d-inline d-sm-none mt-3">
+                <div class="dropdown">
+                    <button class="btn botao-ver-mais dropdown-toggle botao-dropdown" 
+                    type="button" id="dropdownMenuButton" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false">
+                      Menu
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">lançamentos</a>
+                      <a class="dropdown-item" href="#">em destaque</a>
+                      <a class="dropdown-item" href="#">entrevistas & makingof</a>
+                      <a class="dropdown-item" href="#">novidades</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-7 col-5 col-md-6 mt-4 d-none d-sm-inline">
+                <a class="link-nav-desktop botao-menu menu-border" href="./construcao/construcao.html">lançamentos</a>
+                <a class="link-nav-desktop botao-menu menu-border d-md-inline d-none" href="./construcao/construcao.html">em destaque</a>
+                <a class="link-nav-desktop botao-menu menu-border d-lg-inline d-none" href="./construcao/construcao.html">avaliações</a>
+                <a class="link-nav-desktop botao-menu menu-border d-xl-inline d-none" href="./construcao/construcao.html">entrevistas & makingof</a>
+                <a class="link-nav-desktop botao-menu" href="./construcao/construcao.html">novidades</a>
+            </div>
+            <div class="rounded col-lg-2 col-md-3 col-6 col-sm-4 mt-3">
+                <div class="row">
+                    <span class="col-lg-2 col-xl-1 d-none d-lg-inline" id="search-addon">
+                        <img id="icon-search" src="https://img.icons8.com/fluent-systems-filled/48/000000/search.png" />
+                    </span>
+                    <div class="col-lg-10 col-12">
+                        <input type="search" id="search" class="form-control rounded ms-1" placeholder="Pesquisar filme"
+                            aria-label="Search" aria-describedby="search-addon" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="lancamentos">
+            <div class="container center-block">
+                <h1 class="titulo-lancamentos titulo">Lançamentos</h1>
+            </div>
+            <div class="row pb-5">
+                <div class="video-lancamentos pe-5 pe-md-0 col-12 col-md-7">
+                    <iframe src="https://www.youtube.com/embed/kIET9yMABD8" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="frame-video-lancamentos"></iframe>
+                </div>
+                <div class="detalhes-lancamentos d-none d-md-inline col-5">
+                    <span class="d-block"><b>Sinopse:</b> 
+                        As lendas se enfrentam em "Godzilla vs. Kong", 
+                        quando esses adversários míticos se encontram em uma espetacular batalha, 
+                        na qual o destino do mundo entrará em jogo. Kong e seus protetores embarcam em uma jornada 
+                        perigosa para encontrar seu verdadeiro lar. Com eles está Jia, uma jovem órfã que tem uma 
+                        ligação única e forte com Kong. Mas eles não sabiam que estavam no caminho de um Godzilla 
+                        enfurecido, que está deixando um rastro de destruição pelo planeta. 
+                        Esse combate épico entre os dois titãs, 
+                        instigado por forças ocultas, é apenas o começo do mistério que jaz no núcleo da Terra.
+                    </span>
+                    <span class="d-lg-inline d-xl-inline"><b>Diretor:</b> Adam Wingard</span>
+                    <span class="d-lg-inline ps-lg-2 ps-xl-2"><b>Roteiro:</b> Adam Wingard</span>
+                    <span class="d-lg-inline ps-lg-2 ps-xl-2"><b>Estreia:</b> 2021</span>
+                </div>
+            </div>
+        </div>
+        <div id="container-destaque" class="container">
+            <div class="row">
+                <div class="col-12 titulo d-inline-flex">
+                    <h1 class="w-75">Em Destaque</h1>
+                    <div class="dropdown w-25">
+                        <button class="btn botao-ver-mais dropdown-toggle botao-dropdown" 
+                        type="button" id="dropdownMenuButton" data-toggle="dropdown" 
+                        aria-haspopup="true" aria-expanded="false">
+                          Categoria
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Ação</a>
+                          <a class="dropdown-item" href="#">Comédia</a>
+                          <a class="dropdown-item" href="#">Romance</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 pt-4 pb-4">
+                    <img class="cartaz-destaque w-100" src="https://capas-m.imagemfilmes.com.br/164856_000_m.jpg">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 pt-4 pb-4">
+                    <img class="cartaz-destaque w-100" src="https://capas-m.imagemfilmes.com.br/164907_000_m.jpg">
+                </div>
+                <div class="d-none d-md-inline col-6 col-md-4 col-lg-3 pt-4 pb-4">
+                    <img class="cartaz-destaque w-100" src="https://capas-m.imagemfilmes.com.br/164836_000_m.jpg">
+                </div>
+                <div class="d-none d-lg-inline col-lg-3 pt-4 pb-4">
+                    <img class="cartaz-destaque w-100" src="https://capas-m.imagemfilmes.com.br/164857_000_m.jpg">
+                </div>
+                <div class="col-12">
+                    <button class="btn botao-ver-mais">+ Carregar Mais Filmes</button>
+                </div>
+            </div>
+        </div>
+        <div id="container-avaliacoes" class="container">
+            <div class="row pb-5">
+                <div class="col-12 titulo">
+                    <h1>Últimas Avaliações</h1>
+                </div>
+                <div class="row col-12 col-lg">
+                    <div class="foto-avaliacao col-2 d-none d-lg-block">
+                        <img class="w-100" src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png" />
+                    </div>
+                    <div class="col-10">
+                        <span class="d-inline-block"><b>Bruno Botelho</b></span>
+                        <span class="d-inline-block">
+                            O suspense e o terror são dois dos gêneros mais populares do cinema, principalmente, 
+                            por causa do clima de tensão que eles são capazes de criar em suas produções. 
+                            Porém, muitos filmes se atém apenas em tramas superficiais que justifiquem seus sustos fáceis ou reviravoltas mirabolantes. 
+                            Felizmente, o filme de suspense e terror À Espreita do Mal, de 2019, foge dessas narrativas convencionais 
+                            com uma história de mistério intrigante e que tira o público de sua zona de conforto. 
+                            O desaparecimento de um garoto de 12 anos faz com que o investigador principal...
+                        </span>
+                    </div>
+                </div>
+                <div class="row col-12 pt-5 pt-lg-0 col-lg">
+                    <div class="foto-avaliacao col-2 d-none d-lg-block">
+                        <img class="w-100" src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png" />
+                    </div>
+                    <div class="col-10">
+                        <span class="d-inline-block"><b>Vitor Araujo</b></span>
+                        <span class="d-inline-block">
+                            Minari conta a história de uma família imigrante coreana que tenta a sorte na América. 
+                            No ramo da agricultura, tentam fazer uma fazendinha enquanto têm dificuldades, 
+                            problemas de saúde, conflitos na relação e problemas financeiros. Um filme bem emotivo, 
+                            leve, mostra o quanto o Sonho Americano não é tudo que pensam. A dinâmica da família é bem amorosa, 
+                            lutam para dar uma vida melhor aos filhos, que por sua vez são bem bonitinhos e ...
+                        </span>
+                    </div>
+                </div>
+                <div class="col col-12 col-lg row d-none d-lg-flex">
+                    <div class="foto-avaliacao col-2 d-none d-lg-block">
+                        <img class="w-100" src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png" />
+                    </div>
+                    <div class="col-10">
+                        <span class="d-inline-block"><b>Fabio R.</b></span>
+                        <span class="d-inline-block">
+                            Filme muito cansativo.
+                            A edição é muito imprevisível e a aleatoriedade de eventos cansa.
+                            Falta substância, falta história, falta dramaticidade.
+                            O filme tenta nos emocionar o tempo todo, através de relatos de personagens que sequer 
+                            tiveram tempo de tela suficiente para o espectador sentir seus dramas. 
+                            A obra não sabe se quer ser uma ficção ou um documentário.
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 pt-4">
+                    <button class="btn botao-ver-mais">+ Carregar Mais Filmes</button>
+                </div>
+            </div>
+        </div>
+        <div id="makingof">
+            <div id="container-makingof" class="container">
+                <div class="row pb-5">
+                    <div class="col-12 titulo">
+                        <h1>Entrevistas e Making of</h1>
+                    </div>
+                    <div class="col row">
+                        <div class="video-makingof col-12">
+                            <iframe src="https://www.youtube.com/embed/kIET9yMABD8" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="frame-video-makingof"></iframe>
+                        </div>
+                        <div class="col-12 pb-1">Titulo do filme</div>
+                        <div class="col-12"><b>Diretor:</b>Nome do diretor</div>
+                        <div class="col-md-12 col-lg-8 col-xl-8"><b>Roteiro:</b>Nome do roteirista</div>
+                        <div class="col-md-12 col-lg-4 col-xl-4"><b>Estreia:</b>2000</div>
+                    </div>
+                    <div class="col row">
+                        <div class="video-makingof col-12">
+                            <iframe src="https://www.youtube.com/embed/kIET9yMABD8" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="frame-video-makingof"></iframe>
+                        </div>
+                        <div class="col-12 pb-1">Titulo do filme</div>
+                        <div class="col-12"><b>Diretor:</b>Nome do diretor</div>
+                        <div class="col-md-12 col-lg-8 col-xl-8"><b>Roteiro:</b>Nome do roteirista</div>
+                        <div class="col-md-12 col-lg-4 col-xl-4"><b>Estreia:</b>2000</div>
+                    </div>
+                    <div class="col row d-none d-md-inline">
+                        <div class="video-makingof col-12">
+                            <iframe src="https://www.youtube.com/embed/kIET9yMABD8" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="frame-video-makingof"></iframe>
+                        </div>
+                        <div class="col-12 pb-1">Titulo do filme</div>
+                        <div class="col-12"><b>Diretor:</b>Nome do diretor</div>
+                        <div class="col-md-12 col-lg-8 col-xl-8"><b>Roteiro:</b>Nome do roteirista</div>
+                        <div class="col-md-12 col-lg-4 col-xl-4"><b>Estreia:</b>2000</div>
+                    </div>
+                    <div class="col-12 pt-5">
+                        <button class="btn botao-ver-mais">+ Carregar Mais Filmes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-4">
+            <div class="row">
+                <div class="col-12 col-lg-8" id="novidades">
+                    <h2 class="titulo">Novidades</h2>
+                    <div class="row">
+                        <img class="col-4 imagem-novidades"
+                            src="https://jpimg.com.br/uploads/2018/04/atores-viveram-outro-heroi.jpg">
+                        <div class="col-8">
+                            <h6>Titulo da materia</h6>
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean ante massa, blandit id diam non, laoreet mollis ipsum.
+                                Morbi eu viverra leo. Sed non nulla ligula. Morbi eget ultrices dolor.
+                                In aliquam dolor in turpis porta, ultrices laoreet lorem hendrerit.
+                                Aliquam quis mauris egestas, consequat dolor eget, cursus magna.
+                                Nullam auctor, ex et condimentum facilisis, ipsum sapien auctor odio, vel eleifend diam
+                                nunc sit amet purus.
+                                Morbi interdum nisl sit amet turpis venenatis dignissim.
+                            </span>
+                            <div class="pt-1">
+                                <span class="badge badge-pill badge-secondary">teste1</span>
+                                <span class="badge badge-pill badge-secondary">teste1</span>
+                                <span class="badge badge-pill badge-secondary">teste1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-3 mt-3 border-top">
+                        <img class="col-4 imagem-novidades"
+                            src="https://jpimg.com.br/uploads/2018/04/atores-viveram-outro-heroi.jpg">
+                        <div class="col-8">
+                            <h6>Titulo da materia</h6>
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean ante massa, blandit id diam non, laoreet mollis ipsum.
+                                Morbi eu viverra leo. Sed non nulla ligula. Morbi eget ultrices dolor.
+                                In aliquam dolor in turpis porta, ultrices laoreet lorem hendrerit.
+                                Aliquam quis mauris egestas, consequat dolor eget, cursus magna.
+                                Nullam auctor, ex et condimentum facilisis, ipsum sapien auctor odio, vel eleifend diam
+                                nunc sit amet purus.
+                                Morbi interdum nisl sit amet turpis venenatis dignissim.
+                            </span>
+                            <div class="pt-1">
+                                <span class="badge badge-pill badge-secondary">teste1</span>
+                                <span class="badge badge-pill badge-secondary">teste1</span>
+                                <span class="badge badge-pill badge-secondary">teste1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-3 mt-3 border-top">
+                        <img class="col-4 imagem-novidades"
+                            src="https://jpimg.com.br/uploads/2018/04/atores-viveram-outro-heroi.jpg">
+                        <div class="col-8">
+                            <h6>Titulo da materia</h6>
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean ante massa, blandit id diam non, laoreet mollis ipsum.
+                                Morbi eu viverra leo. Sed non nulla ligula. Morbi eget ultrices dolor.
+                                In aliquam dolor in turpis porta, ultrices laoreet lorem hendrerit.
+                                Aliquam quis mauris egestas, consequat dolor eget, cursus magna.
+                                Nullam auctor, ex et condimentum facilisis, ipsum sapien auctor odio, vel eleifend diam
+                                nunc sit amet purus.
+                                Morbi interdum nisl sit amet turpis venenatis dignissim.
+                            </span>
+                            <div class="pt-1">
+                                <span class="badge badge-pill badge-secondary">teste1</span>
+                                <span class="badge badge-pill badge-secondary">teste1</span>
+                                <span class="badge badge-pill badge-secondary">teste1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div id="sobre">
+                        <h2 class="titulo">Sobre</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aenean ante massa, blandit id diam non, laoreet mollis ipsum.
+                            Morbi eu viverra leo. Sed non nulla ligula. Morbi eget ultrices dolor.
+                            In aliquam dolor in turpis porta, ultrices laoreet lorem hendrerit.
+                            Aliquam quis mauris egestas, consequat dolor eget, cursus magna.
+                            Nullam auctor, ex et condimentum facilisis, ipsum sapien auctor odio, vel eleifend diam nunc
+                            sit amet purus.
+                            Morbi interdum nisl sit amet turpis venenatis dignissim.
+                        </span>
+                    </div>
+                    <div id="editorial">
+                        <h2 class="titulo pt-5">Editorial</h2>
+                        <div>
+                            <img src="https://img.icons8.com/ios/50/000000/user.png" />
+                            <span><b>Redação:</b> Gustavo Ferreira</span>
+                        </div>
+                        <div class="pt-2">
+                            <img src="https://img.icons8.com/ios/50/000000/user.png" />
+                            <span><b>Pesquisa:</b> Gustavo Ferreira</span>
+                        </div>
+                        <div class="pt-2">
+                            <img src="https://img.icons8.com/ios/50/000000/user.png" />
+                            <span><b>Gerente Geral:</b> Gustavo Ferreira</span>
+                        </div>
+                    </div>
+                    <div id="redes">
+                        <h4 class="titulo pt-5">redes sociais</h4>
+                        <img src="https://img.icons8.com/android/48/000000/facebook.png" />
+                        <img class="ps-3" src="https://img.icons8.com/android/48/000000/twitter.png" />
+                        <img class="ps-3" src="https://img.icons8.com/android/48/000000/instagram.png" />
+                        <img class="ps-3" src="https://img.icons8.com/android/48/000000/linkedin.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rodape" class="d-none d-lg-block">
+            <span>Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web -
+                <b>ICEI PUC MINAS</b>
+            </span>
+            <img class="logo-footer d-none d-md-inline" src="assets/filmorama.png" alt="Filmorama_LOGO">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>

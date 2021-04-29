@@ -1,0 +1,135 @@
+:root {
+    --amarelo-logo: #EBBA2A;
+    --vermelho-logo: #DE5345;
+}
+
+.home {
+    overflow: hidden;
+}
+
+.header {
+    height: 80px;   
+    background-color: #EBBA2A;
+}
+
+.logo-header {
+    height: 80px;
+}
+
+.logo-footer {
+    height: 80px;
+    float: right;
+    padding-right: 4.5rem;
+}
+
+#icon-search {
+    height: 30px;
+    padding-top: 5px;
+}
+
+#lancamentos {
+    background-color:#f4f4f4;
+}
+
+.titulo-lancamentos {
+    text-align: center;
+}
+
+.titulo {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.frame-video-lancamentos {
+    margin-top: 50px;
+    float: right;
+    width: 90%;
+    aspect-ratio: 16/9;
+}
+
+.detalhes-lancamentos {
+    padding-top: 50px;
+    padding-right: 4rem;
+}
+
+#makingof {
+    background-color:#f4f4f4;
+}
+
+.frame-video-makingof {
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+.imagem-novidades {
+    height: fit-content;
+}
+
+.badge-secondary {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+#rodape {
+    text-align: center;
+    margin-top: 4.5rem;
+    background-color:#f4f4f4;
+    height: 80px;
+    line-height: 80px;;
+}
+
+.botao-menu:link {
+    font-style: normal;
+    color: var(--vermelho-logo);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.botao-menu:visited {
+    color: var(--vermelho-logo);
+}
+
+.botao-menu:active {
+    color: var(--vermelho-logo);
+}
+
+.botao-menu:hover {
+    color: black;
+    border-right-color: var(--vermelho-logo);
+}
+
+.menu-border {
+    border-right-style: solid;
+    border-right-width: unset;
+    padding-right: 0.25rem;
+}
+
+.botao-dropdown {
+    float: right;
+}
+
+.botao-ver-mais {
+    color: var(--amarelo-logo);
+    background-color: black;
+    float: right;
+    font-weight: bold;
+}
+.botao-ver-mais:hover {
+    color: black;
+    background-color: var(--amarelo-logo);
+}
+.botao-ver-mais:active {
+    color: black;
+    background-color: var(--amarelo-logo);
+}
+
+@media (min-width: 576px) and (max-width: 767px){    
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+}
+@media (min-width: 1200px){
+}

@@ -76,7 +76,7 @@ function searchCallback (response) {
             descricao.innerHTML = isNullOrUndefinedOrEmpty(result.overview) ? 'Sem resumo disponível' : result.overview;
  
             titulo.onclick = () => {
-                openGoogleSearch(releaseYear, title);
+                openGoogleSearch(releaseYear, result.title);
             }
             img.onclick = titulo.onclick;
             

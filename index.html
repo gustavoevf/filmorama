@@ -7,6 +7,7 @@
     <title>Filmorama</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/filmorama.ico">
 </head>
@@ -15,7 +16,7 @@
     <div class="home">
         <div class="row header ps-3 pe-3">
             <div class="col-3">
-                <img class="logo-header" src="assets/filmorama.png" alt="Filmorama_LOGO">
+                <img class="logo-header" src="assets/filmorama.png" alt="Filmorama_LOGO" onclick="hideSearch()">
             </div>
             <div class="col-3 col-sm-2 d-inline d-sm-none mt-3">
                 <div class="dropdown">
@@ -25,60 +26,54 @@
                       Menu
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">lançamentos</a>
-                      <a class="dropdown-item" href="#">em destaque</a>
-                      <a class="dropdown-item" href="#">entrevistas & makingof</a>
-                      <a class="dropdown-item" href="#">novidades</a>
+                      <a class="dropdown-item" href="#" onclick="hideSearch()">lançamentos</a>
+                      <a class="dropdown-item" href="#" onclick="hideSearch()">em destaque</a>
+                      <a class="dropdown-item" href="#" onclick="hideSearch()">entrevistas & makingof</a>
+                      <a class="dropdown-item" href="#" onclick="hideSearch()">novidades</a>
                     </div>
                   </div>
             </div>
             <div class="col-lg-7 col-5 col-md-6 mt-4 d-none d-sm-inline">
-                <a class="link-nav-desktop botao-menu menu-border" href="./construcao/construcao.html">lançamentos</a>
-                <a class="link-nav-desktop botao-menu menu-border d-md-inline d-none" href="./construcao/construcao.html">em destaque</a>
-                <a class="link-nav-desktop botao-menu menu-border d-lg-inline d-none" href="./construcao/construcao.html">avaliações</a>
-                <a class="link-nav-desktop botao-menu menu-border d-xl-inline d-none" href="./construcao/construcao.html">entrevistas & makingof</a>
-                <a class="link-nav-desktop botao-menu" href="./construcao/construcao.html">novidades</a>
+                <a class="link-nav-desktop botao-menu menu-border" href="#" onclick="hideSearch()">lançamentos</a>
+                <a class="link-nav-desktop botao-menu menu-border d-md-inline d-none" href="#" onclick="hideSearch()">em destaque</a>
+                <a class="link-nav-desktop botao-menu menu-border d-lg-inline d-none" href="#" onclick="hideSearch()">avaliações</a>
+                <a class="link-nav-desktop botao-menu menu-border d-xl-inline d-none" href="#" onclick="hideSearch()">entrevistas & makingof</a>
+                <a class="link-nav-desktop botao-menu" href="#">novidades</a>
             </div>
             <div class="rounded col-lg-2 col-md-3 col-6 col-sm-4 mt-3">
                 <div class="row">
-                    <span class="col-lg-2 col-xl-1 d-none d-lg-inline" id="search-addon">
-                        <img id="icon-search" src="https://img.icons8.com/fluent-systems-filled/48/000000/search.png" />
-                    </span>
-                    <div class="col-lg-10 col-12">
+                    <div class="col-10">
                         <input type="search" id="search" class="form-control rounded ms-1" placeholder="Pesquisar filme"
                             aria-label="Search" aria-describedby="search-addon" />
                     </div>
+                    <span class="col-2 col-xl-1" id="search-addon">
+                        <button type="submit" onclick="search()"><i class="fa fa-search"></i></button>
+                    </span>
                 </div>
             </div>
         </div>
-        <div id="lancamentos">
+        <div id="lancamentos" class="home-switch">
             <div class="container center-block">
-                <h1 class="titulo-lancamentos titulo">Lançamentos</h1>
+                <h1 class="titulo-lancamentos titulo">Populares</h1>
             </div>
             <div class="row pb-5">
-                <div class="video-lancamentos pe-5 pe-md-0 col-12 col-md-7">
-                    <iframe src="https://www.youtube.com/embed/kIET9yMABD8" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class="frame-video-lancamentos"></iframe>
+                <div class="pt-4 pe-5 pe-md-0 col-12 col-md-5 popular-div">
+                    <img id="popular-img" src="" alt="" onclick="searchPopular()">
                 </div>
-                <div class="detalhes-lancamentos d-none d-md-inline col-5">
-                    <span class="d-block"><b>Sinopse:</b> 
-                        As lendas se enfrentam em "Godzilla vs. Kong", 
-                        quando esses adversários míticos se encontram em uma espetacular batalha, 
-                        na qual o destino do mundo entrará em jogo. Kong e seus protetores embarcam em uma jornada 
-                        perigosa para encontrar seu verdadeiro lar. Com eles está Jia, uma jovem órfã que tem uma 
-                        ligação única e forte com Kong. Mas eles não sabiam que estavam no caminho de um Godzilla 
-                        enfurecido, que está deixando um rastro de destruição pelo planeta. 
-                        Esse combate épico entre os dois titãs, 
-                        instigado por forças ocultas, é apenas o começo do mistério que jaz no núcleo da Terra.
-                    </span>
-                    <span class="d-lg-inline d-xl-inline"><b>Diretor:</b> Adam Wingard</span>
-                    <span class="d-lg-inline ps-lg-2 ps-xl-2"><b>Roteiro:</b> Adam Wingard</span>
-                    <span class="d-lg-inline ps-lg-2 ps-xl-2"><b>Estreia:</b> 2021</span>
+                <div class="pt-4 detalhes-lancamentos d-none d-md-inline col-7">
+                    <h3 id="popular-title" onclick="searchPopular()"></h3>
+                    <span class="d-block" id="popular-description" onclick="searchPopular()"></span>
+                    <span class="d-inline" id="popular-release" onclick="searchPopular()"><b>Lançamento:</b></span>
+                    <span class="d-inline" id="popular-date" onclick="searchPopular()"></span>
                 </div>
             </div>
+            <div id="popular-timer" center-block>
+                <div class="round-time-bar" data-style="smooth" style="--duration: 4;">
+                    <div></div>
+                  </div>
+            </div>
         </div>
-        <div id="container-destaque" class="container">
+        <div id="container-destaque home-switch" class="container home-switch">
             <div class="row">
                 <div class="col-12 titulo d-inline-flex">
                     <h1 class="w-75">Em Destaque</h1>
@@ -112,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div id="container-avaliacoes" class="container">
+        <div id="container-avaliacoes home-switch" class="container home-switch">
             <div class="row pb-5">
                 <div class="col-12 titulo">
                     <h1>Últimas Avaliações</h1>
@@ -169,7 +164,7 @@
                 </div>
             </div>
         </div>
-        <div id="makingof">
+        <div id="makingof home-switch" class="home-switch">
             <div id="container-makingof" class="container">
                 <div class="row pb-5">
                     <div class="col-12 titulo">
@@ -217,7 +212,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mb-4">
+        <div class="container mb-4 home-switch">
             <div class="row">
                 <div class="col-12 col-lg-8" id="novidades">
                     <h2 class="titulo">Novidades</h2>
@@ -327,6 +322,7 @@
                 </div>
             </div>
         </div>
+        <div class="search-switch ms-3 mr-3" id="search-content"></div>
         <div id="rodape" class="d-none d-lg-block">
             <span>Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web -
                 <b>ICEI PUC MINAS</b>
@@ -334,6 +330,7 @@
             <img class="logo-footer d-none d-md-inline" src="assets/filmorama.png" alt="Filmorama_LOGO">
         </div>
     </div>
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
